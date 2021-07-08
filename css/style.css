@@ -7,31 +7,16 @@ html {
 body {
   margin: 0;
   padding: 0;
+  height: auto;
 }
 
-body .container {
+.container {
   display: grid;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Montserrat';
   color: #2E363E;
-}
-
-@media screen and (max-width: 1300px) {
-  body .container {
-    padding: 0 15px;
-  }
-  body .container .title {
-    font-size: 28px;
-  }
-  body .container .subtitle {
-    font-size: 18px;
-  }
-  body .container .mark {
-    width: 60px;
-    font-size: 8px;
-  }
 }
 
 .header {
@@ -147,7 +132,7 @@ body .container {
   max-height: 88px;
   border-radius: 8px;
   background: #FED84C;
-  font-wight: 400;
+  font-weight: 400;
   font-size: 18px;
   color: #2E363E;
   line-height: 152%;
@@ -230,4 +215,54 @@ body .container {
   background-color: #89b457;
   transition: 0.5s;
   color: #ffff;
+}
+
+.order {
+  display: flex;
+  justify-content: space-between;
+  height: 1352px;
+  margin-top: 100px;
+  background-color: #081130;
+}
+
+.order .wraper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  width: 1920px;
+}
+
+.order .phone {
+  position: absolute;
+  object-fit: contain;
+  top: 300px;
+  left: 0;
+  max-width: 1090px;
+  max-height: 1034px;
+}
+
+.order .cloud2 {
+  z-index: 20;
+}
+
+.order .container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order .container .content-2 {
+  top: 439px;
+  max-width: 481px;
+  min-height: 454px;
+  color: #ffff;
+}
+
+.order .container .title {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1px;
 }
