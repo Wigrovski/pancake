@@ -242,14 +242,12 @@ button:hover {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  height: 100%;
-  width: 1920px;
 }
 
 .order .phone {
   position: absolute;
   object-fit: contain;
-  top: 300px;
+  bottom: 0;
   left: 0;
   max-width: 1090px;
   max-height: 1034px;
@@ -273,7 +271,7 @@ button:hover {
 }
 
 .order .container .content-2 .title {
-  font-size: 48px;
+  font-size: 2vw;
   line-height: 60px;
   letter-spacing: -1px;
 }
@@ -407,7 +405,6 @@ button:hover {
 
 .testimonials {
   background-color: #081130;
-  height: 1505px;
 }
 
 .testimonials .wraper {
@@ -416,7 +413,6 @@ button:hover {
   flex-direction: column;
   position: relative;
   height: 100%;
-  width: 1920px;
 }
 
 .testimonials .wraper h2 {
@@ -425,23 +421,28 @@ button:hover {
   margin-bottom: 80px;
 }
 
-.testimonials .slider_item {
+.testimonials .slider {
+  width: 100%;
+  paddind: 0 15px;
+}
+
+.testimonials .slider .slider_item {
   width: 894px;
   height: 100%;
   background-color: #ffff;
   padding: 70px 143px;
 }
 
-.testimonials .slider_item__content {
+.testimonials .slider .slider_item__content {
   display: flex;
   justify-content: space-between;
 }
 
-.testimonials .slider_item__content-text img {
+.testimonials .slider .slider_item__content-text img {
   margin-bottom: 24px;
 }
 
-.testimonials .slider_item__content-text .content-text-title {
+.testimonials .slider .slider_item__content-text .content-text-title {
   width: 460px;
   font-weight: 500;
   font-size: 30px;
@@ -449,7 +450,7 @@ button:hover {
   line-height: 42px;
 }
 
-.testimonials .slider_item__content-text .content-text-subtitle {
+.testimonials .slider .slider_item__content-text .content-text-subtitle {
   width: 430px;
   font-weight: 400;
   font-size: 15px;
@@ -458,38 +459,38 @@ button:hover {
   line-height: 170%;
 }
 
-.testimonials .slider_item__content-text a {
+.testimonials .slider .slider_item__content-text a {
   color: #4A94FF;
   font-size: 14px;
 }
 
-.testimonials .slider_item__content-text a:hover {
+.testimonials .slider .slider_item__content-text a:hover {
   color: red;
 }
 
-.testimonials .slider_item__content-photo {
+.testimonials .slider .slider_item__content-photo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.testimonials .slider_item__content-photo img {
+.testimonials .slider .slider_item__content-photo img {
   margin-bottom: 30px;
 }
 
-.testimonials .slider_item__content-photo .content-photo-title {
+.testimonials .slider .slider_item__content-photo .content-photo-title {
   font-weight: 500;
   font-size: 21px;
   margin-bottom: 5px;
 }
 
-.testimonials .slider_item__content-photo .content-photo-subtitle {
+.testimonials .slider .slider_item__content-photo .content-photo-subtitle {
   font-weight: 400;
   font-size: 18px;
   color: #A6AEB6;
 }
 
-@media all and (min-width: 1270px) {
+@media all and (max-width: 1310px) {
   .header .content {
     max-width: 507px;
     color: #ffff;
@@ -497,12 +498,26 @@ button:hover {
   }
   .header .content .title {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 3vw;
     line-height: 40px;
   }
   .header .content .subtitle {
     width: 420px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.5vw;
+  }
+  .carts h2 {
+    font-size: 2vw;
+  }
+  .order {
+    max-height: 85vw;
+  }
+  .order .wraper {
+    max-width: 100vw;
+    max-height: 90vw;
+  }
+  .order .wraper .phone {
+    max-width: 50vw;
+    bottom: 0;
   }
 }
