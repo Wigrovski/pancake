@@ -7,6 +7,9 @@ body
     margin: 0
     padding: 0
     height: auto
+    h2
+        font-weight: 500
+        font-size: 48px
 .container
     display: grid
     align-items: center
@@ -18,7 +21,7 @@ body
 
 .header
         max-width: 1920px
-        height: 1294px
+        // height: 1294px
         margin: 0 auto
         padding: 0 0
         position: relative
@@ -63,35 +66,38 @@ body
                 font-size: 20px
             .work-time
                 font-size: 13px
-        &__content
-            width: 647px
+        .content
+            max-width: 647px
             color: #ffff
             margin-top: 188px
-            .mark
-                display: flex
-                max-width: 132px
-                max-height: 37px
-                background: #F2F6FA
-                color: #2E363E
-                border-radius: 5px
-                padding: 10px 18px
-                justify-content: center
-                span
-                    display: block
-                    align-self: center
-                    text-align: center
-                    text-transform: uppercase
-            .title
-                font-weight: 700
-                font-size: 48px
             .subtitle
                 width: 544px
                 font-weight: 400
                 font-size: 24px
             .button-section
                 display: flex
-                button
-                    max-width: 277px
+                
+                p
+                    width: 210px
+                    height: 48px
+                    font-size: 15px
+                    line-height: 24px
+                    margin-left: 20px
+.mark
+                display: flex
+                display: inline-block
+                max-height: 37px
+                background: #F2F6FA
+                color: #2E363E
+                border-radius: 5px
+                padding: 10px 18px
+                justify-content: center
+                span                 
+                    align-self: center
+                    text-align: center
+                    text-transform: uppercase
+button
+                    display: inline-block
                     max-height: 88px
                     border-radius: 8px
                     background: #FED84C
@@ -105,17 +111,13 @@ body
                     &:hover
                         background-color: #89b457
                         transition: 0.5s
-                        color: #ffff
-
-                p
-                    width: 210px
-                    height: 48px
-                    font-size: 15px
-                    line-height: 24px
-                    margin-left: 20px
-        
+                        color: #ffff 
+.title
+    font-weight: 500
+    font-size: 48px
+    line-height: 60px
 .main
-    margin-top: -60px
+    margin-top: 60px
     height: auto
 
     h1
@@ -154,6 +156,7 @@ body
             .cart_btn
                 width: 163px
                 height: 68px
+                padding: 20px 40px
                 background-color: #FED84C
                 border-radius: 8px
                 border-width: 0px
@@ -221,3 +224,155 @@ body
                         background-color: #89b457
                         transition: 0.5s
                         color: #ffff
+.question
+    .container
+        display: flex
+        justify-content: space-between
+.content-3
+    width: 580px
+    height: 637px
+    margin-top: 97px
+    margin-bottom: 96px
+    ul 
+        width: 438px
+        margin-bottom: 50px
+        li
+            color: #5D6AFB
+            margin-bottom: 30px
+            span
+                color: #2E363E
+                font-size: 18px
+                font-weight: 400
+                line-height: 27px
+.owner
+    height: 100%
+    position: relative
+    margin-top: 14px
+    .circle
+        width: 580px
+        height: 580px
+        margin-top: 224px
+        border-radius: 50%
+        background: #FED84C
+    .image-mask
+        position: absolute
+        top: 223px
+        width: 580px
+        height: 580px
+        border-radius: 50%
+        overflow: hidden
+        .mask
+            position: absolute
+            top: -230px
+            left: 63px
+    .image
+        position: absolute
+        width: 493px
+        height: 816px
+        top: 0
+        left: 63px
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 76%);
+    &_name
+        width: 287px
+        height: 112px
+        display: flex
+        flex-direction: column
+        position: absolute
+        bottom: 162px
+        margin-left: -94px
+        &__title
+            max-height: 60px
+            font-size: 23px
+            font-weight: 500
+            background: #2E363E
+            padding: 15px 24px
+            color: #ffff
+            text-align: center
+        &__profession
+            width: 218px
+            height: 52px
+            font-size: 18px
+            font-weight: 400
+            padding: 15px 24px
+            background: #F2F6FA
+            text-transform: uppercase
+            text-align: center
+
+.testimonials
+    background-color: #081130
+    height: 1505px
+    .wraper
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        // justify-content: space-between
+        position: relative
+        height: 100%
+        width: 1920px
+        h2
+            color: #ffff
+            text-align: center
+            margin-bottom: 80px
+    .slider_item
+        width: 894px
+        height: 100%
+        background-color: #ffff
+        padding: 70px 143px
+        &__content
+            display: flex
+            justify-content: space-between
+            &-text
+                img
+                    margin-bottom: 24px
+                .content-text-title
+                    width: 460px
+                    font-weight: 500
+                    font-size: 30px
+                    margin-bottom: 24px
+                    line-height: 42px
+                .content-text-subtitle
+                    width: 430px
+                    font-weight: 400
+                    font-size: 15px
+                    color: #2E363E;
+                    margin-bottom: 24px
+                    line-height: 170%
+                a
+                    color: #4A94FF
+                    font-size: 14px
+                    &:hover
+                        color: red
+            &-photo
+                display: flex
+                flex-direction: column
+                align-items: center
+                img
+                    margin-bottom: 30px
+                .content-photo-title
+                    font-weight: 500
+                    font-size: 21px
+                    margin-bottom: 5px
+                .content-photo-subtitle
+                    font-weight: 400
+                    font-size: 18px
+                    color: #A6AEB6
+@media all and (min-width: 1270px)
+    .header
+        .content
+            max-width: 507px
+            color: #ffff
+            margin-top: 100px
+            .title
+                font-weight: 500
+                font-size: 34px
+                line-height: 40px
+            .subtitle
+                width: 420px
+                font-weight: 400
+                font-size: 18px
+
+
+
+
+
+
