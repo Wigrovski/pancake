@@ -8,11 +8,12 @@ body {
   margin: 0;
   padding: 0;
   height: auto;
+  font-family: 'Montserrat';
 }
 
 body h2 {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 30px;
 }
 
 .container {
@@ -20,7 +21,6 @@ body h2 {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: 'Montserrat';
   color: #2E363E;
 }
 
@@ -32,10 +32,10 @@ body h2 {
 }
 
 .header .bgimage {
-  width: 100%;
-  height: 120vh;
-  background: url("/img/bg.jpg") center center fixed;
-  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  background: url("/img/bg.jpg") center center;
+  object-fit: contain;
 }
 
 .header__logo {
@@ -96,6 +96,7 @@ body h2 {
   max-width: 647px;
   color: #ffff;
   margin-top: 188px;
+  margin-bottom: 325px;
 }
 
 .header .content .subtitle {
@@ -255,6 +256,13 @@ button:hover {
 
 .order .cloud2 {
   z-index: 20;
+  max-width: 100%;
+  height: auto;
+}
+
+.order .cloud1 {
+  max-width: 100%;
+  height: auto;
 }
 
 .order .container {
@@ -490,7 +498,36 @@ button:hover {
   color: #A6AEB6;
 }
 
+.gallery {
+  margin: 0 auto;
+}
+
+.gallery_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery_wraper {
+  width: 1920px;
+  height: auto;
+  max-width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: 0 0px;
+}
+
+.gallery_wraper img {
+  width: 620px;
+}
+
 @media all and (max-width: 1310px) {
+  .container {
+    padding: 0 10px;
+  }
   .header .content {
     max-width: 507px;
     color: #ffff;
@@ -506,6 +543,9 @@ button:hover {
     font-weight: 400;
     font-size: 1.5vw;
   }
+  .carts {
+    padding: 0px 10px;
+  }
   .carts h2 {
     font-size: 2vw;
   }
@@ -515,6 +555,9 @@ button:hover {
   .order .wraper {
     max-width: 100vw;
     max-height: 90vw;
+  }
+  .order .wraper img {
+    object-fit: cover;
   }
   .order .wraper .phone {
     max-width: 50vw;
